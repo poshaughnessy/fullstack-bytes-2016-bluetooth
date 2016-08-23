@@ -1010,86 +1010,17 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-17">
-    <section class="slide-content"><h2 id="cordova">Cordova</h2>
-<p><img src="images/cordova-logo.png" alt="Cordova"></p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-18">
-    <section class="slide-content"><h2 id="cordova-plugin-ble-central">cordova-plugin-ble-central</h2>
-<p class="media-container"><img src="images/cordova-plugin-ble-central.png" alt="cordova-plugin-ble-centra"></p></section>
-  </div>
-  <div class="slide hidden" id="slide-19">
-    <section class="slide-content"><ul class="long-list">
-  <li>startScan</li>
-  <li>stopScan</li>
-  <li>connect</li>
-  <li>disconnect</li>
-  <li>read</li>
-  <li>write</li>
-  <li>startNotification</li>
-  <li>stopNotification ...</li>
-</ul></section>
-  </div>
-  <div class="slide hidden" id="slide-20">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onDeviceReady</span>(<span class="hljs-params"></span>) </span>{
- <span class="hljs-comment">// Scan for Bluetooth devices</span>
- ble.scan([], <span class="hljs-number">5</span>, onDiscoverDevice, onError);
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onDiscoverDevice</span>(<span class="hljs-params">device</span>) </span>{
-
- <span class="hljs-keyword">let</span> listItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'li'</span>);
- listItem.innerHTML = <span class="hljs-string">`&lt;p&gt;<span class="hljs-subst">${device.name}</span>&lt;/p&gt;`</span>;
- listItem.onclick = connect(device.id);
-
- deviceList.appendChild(listItem);
-
-}</code></pre>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-21">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">deviceId</span>) </span>{
- currentDeviceId = deviceId;
- ble.connect(deviceId, onConnect, onError);
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onConnect</span>(<span class="hljs-params"></span>) </span>{
- ble.startNotification(currentDeviceId, 
-    BATTERY_SERVICE, BATTERY_CHARACTERISTIC, 
-    onBatteryLevelChange, onError);
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onBatteryLevelChange</span>(<span class="hljs-params">dataBuffer</span>) </span>{
- <span class="hljs-keyword">let</span> bytes = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(dataBuffer);
- batteryState.innerHTML = bytes[<span class="hljs-number">0</span>];
-}</code></pre>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-22">
-    <section class="slide-content"><h2 id="react-native">React Native</h2>
-<p><img src="images/react-logo.png" alt="React Native"></p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-23">
-    <section class="slide-content"><h2 id="react-native-ble">react-native-ble</h2>
-<p class="media-container"><img src="images/react-native-ble.png" alt="react-native-ble"></p></section>
-  </div>
-  <div class="slide hidden" id="slide-24">
-    <section class="slide-content"><h2 id="react-native-cordova-plugin">react-native-cordova-plugin</h2>
-<p class="media-container"><img src="images/react-native-cordova-plugin.png" alt="react-native-cordova-plugin"></p></section>
-  </div>
-  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h2 id="web-bluetooth">Web Bluetooth</h2>
 <p><img src="images/ble-logo.png" alt="BLE logo" class="w-300"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-26">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><div class="vertical-center">
     <img src="images/web-bluetooth-caniuse.png" alt="caniuse.com">
     <p class="caption">caniuse.com</p>
 </div></section>
   </div>
-  <div class="slide hidden" id="slide-27">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><ul>
 <li>Chrome for Android (Marshmallow)</li>
 <li>Chrome OS</li>
@@ -1099,29 +1030,29 @@ pre .xml .cdata {
 <p><img src="images/web-bluetooth-flag.png" alt="Web Bluetooth flag"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-28">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="origin-trial">Origin Trial</h2>
 <p>Register at: <a href="http://bit.ly/WebBluetoothOriginTrial">bit.ly/WebBluetoothOriginTrial</a></p>
 <p>More info: <a href="https://bit.ly/OriginTrials">bit.ly/OriginTrials</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-29">
+  <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h2 id="samsung-internet">Samsung Internet</h2>
 <p><img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/></p>
 <p>Watch this space...</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-30">
+  <div class="slide hidden" id="slide-22">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> options = {filters: [{
                  services: [<span class="hljs-string">'battery_service'</span>] }] };
 
 navigator.bluetooth.requestDevice(options)</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-31">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><p class="media-container"><img src="images/bluetooth-device-chooser.png" alt="Bluetooth pairing screen"></p></section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><pre><code class="lang-javascript">  ...
 
   .then(device =&gt; device.connectGATT())  
@@ -1139,20 +1070,20 @@ navigator.bluetooth.requestDevice(options)</code></pre>
   });</code></pre>
 <div class="caption"><a href="http://bit.ly/chrome-bluetooth-guide">bit.ly/chrome-bluetooth-guide</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-33">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h2 class="vertical-center">Testing</h2></section>
   </div>
-  <div class="slide hidden" id="slide-34">
+  <div class="slide hidden" id="slide-26">
     <section class="slide-content"><blockquote>
 <p>“This is a short list of issues you will encounter if you try to use native Android BLE...”</p>
 </blockquote>
 </section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/sweetblue.png" alt="Sweetblue"></p>
 <p class="caption"><a href="http://bit.ly/sweetblue-android">bit.ly/sweetblue-android</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><div class="vertical-center">
   <ul>
       <li>Start with a small list of supported devices</li>
@@ -1160,31 +1091,31 @@ navigator.bluetooth.requestDevice(options)</code></pre>
   </ul>
 </div></section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><p class="media-container"><img src="images/cysmart.png" alt="CySmart"></p>
 <p class="caption">CySmart with CySmart BLE dongle</p></section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><p class="media-container"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
 <p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
   </div>
-  <div class="slide hidden" id="slide-39">
+  <div class="slide hidden" id="slide-31">
     <section class="slide-content"><h2 class="vertical-center">Demo time</h2></section>
   </div>
-  <div class="slide hidden" id="slide-40">
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><p class="media-container"><img src="images/web-drone-screenshot.png" alt="web-bluetooth-parrot-drone"></p>
 <p class="caption"><a href="http://bit.ly/web-bluetooth-drone">bit.ly/web-bluetooth-drone</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-41">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><div class="vertical-center">
     <h2>In case of demo fail</h2>
     <a href="https://youtu.be/-FO9thLaiug">bit.ly/web-bluetooth-drone-video</a>
 </div></section>
   </div>
-  <div class="slide hidden" id="slide-42">
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><h2 class="vertical-center">Code time</h2></section>
   </div>
-  <div class="slide hidden author-slide" id="slide-43">
+  <div class="slide hidden author-slide" id="slide-35">
     <section class="slide-content"><div class="author">
   <h1 class="name">Thank you.</h1>
     <h3 class="twitter">
