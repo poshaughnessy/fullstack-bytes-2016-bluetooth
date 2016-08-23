@@ -201,6 +201,23 @@ function onBatteryLevelChange(dataBuffer) {
 
 --
 
+## Origin Trial
+
+Register at: [bit.ly/WebBluetoothOriginTrial](http://bit.ly/WebBluetoothOriginTrial)
+
+More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
+
+--
+
+## Samsung Internet
+
+![Samsung Internet logo](images/samsunginternet.png)
+
+Watch this space...
+
+--
+
+
 ```javascript
 let options = {filters: [{
                  services: ['battery_service'] }] };
