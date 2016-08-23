@@ -71,8 +71,7 @@ controls: false
 
 * `0xff === 255`
 * `parseInt('ff', 16) === 255`
-* Uint8Array useful for data buffers
-* We've started: [github.com/pebblecode/hex-utils](https://github.com/pebblecode/hex-utils)
+* [Uint8Array and DataView](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/) useful for data buffers
 
 --
 
@@ -205,13 +204,14 @@ function onBatteryLevelChange(dataBuffer) {
 
 Register at: [bit.ly/WebBluetoothOriginTrial](http://bit.ly/WebBluetoothOriginTrial)
 
+
 More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
 
 --
 
 ## Samsung Internet
 
-![Samsung Internet logo](images/samsunginternet.png)
+<img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/>
 
 Watch this space...
 

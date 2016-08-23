@@ -384,12 +384,13 @@ blockquote {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 
 .media-container {
   height: -webkit-calc(100% - 1.3em);
   height: calc(100% - 1.3em);
+  margin: 0;
 }
 
 a {
