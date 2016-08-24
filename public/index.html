@@ -986,7 +986,7 @@ pre .xml .cdata {
 <p class="caption"><a href="http://www.pokemongo.com/en-us/pokemon-go-plus/">Pokemon Go Plus watch</a></p></section>
   </div>
   <div class="slide hidden" id="slide-8">
-    <section class="slide-content"><p class="media-container"><img src="images/bluetooth-friends.png" alt="Bluetooth friends"></p></section>
+    <section class="slide-content"><p class="media-container"><img src="images/bluetooth-friends.jpg" alt="Bluetooth friends"></p></section>
   </div>
   <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h2 id="bluetooth-low-energy">Bluetooth Low Energy</h2>
@@ -1077,10 +1077,8 @@ navigator.bluetooth.requestDevice(options)</code></pre>
     <section class="slide-content"><pre><code class="lang-javascript">  ...
 
   .then(device =&gt; device.connectGATT())  
-  .then(server =&gt;
-    server.getPrimaryService(<span class="hljs-string">'battery_service'</span>))
-  .then(service =&gt;
-    service.getCharacteristic(<span class="hljs-string">'battery_level'</span>))
+  .then(server =&gt; server.getPrimaryService(<span class="hljs-string">'batt_service'</span>))
+  .then(service =&gt; service.getCharacteristic(<span class="hljs-string">'batt_level'</span>))
   .then(characteristic =&gt; {
     <span class="hljs-comment">// Read battery level</span>
     <span class="hljs-keyword">return</span> characteristic.readValue();
@@ -1095,7 +1093,9 @@ navigator.bluetooth.requestDevice(options)</code></pre>
     <section class="slide-content"><h2>Physical Web</h2>
 
 <p class="media-container"><img src="images/physical-web-logo.png" alt="Physical Web logo" width="30%"/></p>
-&lt;p class=&quot;caption&gt;A discovery service for &#39;smart&#39; objects</p></section>
+
+<p>A discovery service for &#39;smart&#39; objects</p>
+</section>
   </div>
   <div class="slide hidden" id="slide-25">
     <section class="slide-content"><p class="media-container"><img src="images/physical-web-bus.png" alt="Physical Web bus example"></p>
@@ -1106,57 +1106,61 @@ navigator.bluetooth.requestDevice(options)</code></pre>
 <p class="caption"><a href="https://youtu.be/b0GDk-53fTo">Physical Web restaurant buzzer</a></p></section>
   </div>
   <div class="slide hidden" id="slide-27">
-    <section class="slide-content"><p><h2>Eddystone-URL</h2></p>
-<p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="50%"/></p></section>
+    <section class="slide-content"><p><p class="media-container fill-h"><img src="images/physical-web-enable.png" alt="Enabling Physical Web"/></p>
+</section>
   </div>
   <div class="slide hidden" id="slide-28">
-    <section class="slide-content"><h2>Bluetooth Testing</h2></section>
+    <section class="slide-content"><p><h2>Eddystone-URL</h2></p>
+<p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="65%"/></p></section>
   </div>
   <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><h2>Bluetooth Testing</h2></section>
+  </div>
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><blockquote>
 <p>“This is a short list of issues you will encounter if you try to use native Android BLE...”</p>
 </blockquote>
 </section>
   </div>
-  <div class="slide hidden" id="slide-30">
+  <div class="slide hidden" id="slide-31">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/sweetblue.png" alt="Sweetblue"></p>
 <p class="caption"><a href="http://bit.ly/sweetblue-android">bit.ly/sweetblue-android</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-31">
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><ul>
   <li>Start with a small list of supported devices</li>
   <li>Allow lots of time for device testing</li>
 </ul></section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/cysmart.png" alt="CySmart"></p>
 <p class="caption">CySmart with CySmart BLE dongle</p></section>
   </div>
-  <div class="slide hidden" id="slide-33">
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><p class="media-container"><img src="images/cysmart-app.webp" alt="CySmart app"></p>
 <p class="caption">CySmart app on App Store and Play Store</p></section>
   </div>
-  <div class="slide hidden" id="slide-34">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
 <p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-36">
     <section class="slide-content"><p><h2>Demo time</h2></p>
 <p class="no-margin"><img src="images/web-drone-screenshot.png" width="30%" alt="Web Drone Controller"/></p>
 <p class="caption"><a href="http://bit.ly/web-bluetooth-drone">bit.ly/web-bluetooth-drone</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-37">
     <section class="slide-content"><p><h2>In case of demo fail</h2>
 <a href="https://youtu.be/gXu3G3cg52k">bit.ly/web-bluetooth-drone-vid</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden" id="slide-38">
     <section class="slide-content"><h2>Code time</h2></section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden" id="slide-39">
     <section class="slide-content"><h2>The physical world is now at your command.</h2></section>
   </div>
-  <div class="slide hidden" id="slide-39">
+  <div class="slide hidden" id="slide-40">
     <section class="slide-content"><h1>Thanks!</h1>
 
 <div class="group-closer">

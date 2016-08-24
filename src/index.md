@@ -45,7 +45,7 @@ controls: false
 
 --
 
-<p class="media-container">![Bluetooth friends](images/bluetooth-friends.png)</p>
+<p class="media-container">![Bluetooth friends](images/bluetooth-friends.jpg)</p>
 
 --
 
@@ -149,10 +149,8 @@ navigator.bluetooth.requestDevice(options)
   ...
   
   .then(device => device.connectGATT())  
-  .then(server =>
-    server.getPrimaryService('battery_service'))
-  .then(service =>
-    service.getCharacteristic('battery_level'))
+  .then(server => server.getPrimaryService('batt_service'))
+  .then(service => service.getCharacteristic('batt_level'))
   .then(characteristic => {
     // Read battery level
     return characteristic.readValue();
@@ -170,7 +168,8 @@ navigator.bluetooth.requestDevice(options)
 <h2>Physical Web</h2>
 
 <p class="media-container"><img src="images/physical-web-logo.png" alt="Physical Web logo" width="30%"/></p>
-<p class="caption>A discovery service for 'smart' objects</p>
+
+A discovery service for 'smart' objects
 
 --
 
@@ -184,8 +183,12 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
+<p class="media-container fill-h"><img src="images/physical-web-enable.png" alt="Enabling Physical Web"/>
+
+--
+
 <h2>Eddystone-URL</h2>
-<p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="50%"/></p>
+<p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="65%"/></p>
 
 --
 
