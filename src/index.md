@@ -151,7 +151,6 @@ navigator.bluetooth.requestDevice({
 
 ```javascript
   ...
-  
   .then(device => device.connectGATT())  
   .then(server => server.getPrimaryService('batt_service'))
   .then(service => service.getCharacteristic('batt_level'))
@@ -160,8 +159,11 @@ navigator.bluetooth.requestDevice({
     return characteristic.readValue();
   })
   .then(value => {
-    let bytes = new Uint8Array(value.buffer);
-    console.log(`Battery level: ${bytes[0]}`);
+    let batteryLevel = value.getUint8(0);
+    // Or you could do: 
+    // let array = new Uint8Array(value.buffer);
+    // batteryLevel = array[0];
+    console.log(`Battery level: ${batteryLevel}`);
   });
 ```
 

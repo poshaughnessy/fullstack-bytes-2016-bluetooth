@@ -501,6 +501,7 @@ pre .tex .special {
 
 pre code {
   color: #333;
+  font-size: 1.1em;
 }
 
 pre code .constant {
