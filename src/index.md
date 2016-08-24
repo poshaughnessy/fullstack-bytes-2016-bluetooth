@@ -63,7 +63,7 @@ controls: false
 
 --
 
-<h2>Generic ATTribute profile (GATT)</h2>
+<h2>Generic ATTributes (GATT)</h2>
 <p class="media-container"><img src="images/bluetooth-profiles-etc.png" alt="GATT" width="40%"/></p>
 
 --
