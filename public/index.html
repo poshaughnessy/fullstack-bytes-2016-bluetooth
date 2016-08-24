@@ -688,7 +688,7 @@ h3 {
 }
 
 ul {
-  margin: 0;
+  margin: 0.5 0 1em 0;
   padding: 0 0 0 45px;
   font-weight: 200;
   line-height: 1.4;
@@ -948,6 +948,9 @@ pre .xml .cdata {
   opacity: .5;
 }
 
+#slide-21 code {
+  font-size: 1.3em;
+}
   </style>
 </head>
 <body>
@@ -1066,14 +1069,17 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-21">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> options = {filters: [{
-                 services: [<span class="hljs-string">'battery_service'</span>] }] };
-
-navigator.bluetooth.requestDevice(options)</code></pre>
+    <section class="slide-content"><pre><code class="lang-javascript">navigator.bluetooth.requestDevice({
+  filters: [{
+    name: <span class="hljs-string">'SomeAmazingRobot'</span>
+  }],
+  optionalServices: [<span class="hljs-string">'battery_service'</span>]
+})
+...</code></pre>
 </section>
   </div>
   <div class="slide hidden" id="slide-22">
-    <section class="slide-content"><p class="media-container"><img src="images/bluetooth-device-chooser.png" alt="Bluetooth pairing screen"></p></section>
+    <section class="slide-content"><p class="media-container fill-h"><img src="images/bluetooth-pairing-prompt.png" alt="Bluetooth pairing prompt"/></p></section>
   </div>
   <div class="slide hidden" id="slide-23">
     <section class="slide-content"><pre><code class="lang-javascript">  ...

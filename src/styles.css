@@ -331,7 +331,7 @@ h3 {
 }
 
 ul {
-  margin: 0;
+  margin: 0.5 0 1em 0;
   padding: 0 0 0 45px;
   font-weight: 200;
   line-height: 1.4;
@@ -589,4 +589,8 @@ pre .xml .vbscript,
 pre .xml .css,
 pre .xml .cdata {
   opacity: .5;
+}
+
+#slide-21 code {
+  font-size: 1.3em;
 }

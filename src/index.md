@@ -133,17 +133,19 @@ More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
 
 --
 
-
 ```javascript
-let options = {filters: [{
-                 services: ['battery_service'] }] };
-                 
-navigator.bluetooth.requestDevice(options)
+navigator.bluetooth.requestDevice({
+  filters: [{
+    name: 'SomeAmazingRobot'
+  }],
+  optionalServices: ['battery_service']
+})
+...
 ```
 
 --
 
-<p class="media-container">![Bluetooth pairing screen](images/bluetooth-device-chooser.png)</p>
+<p class="media-container fill-h"><img src="images/bluetooth-pairing-prompt.png" alt="Bluetooth pairing prompt"/></p>
 
 --
 
