@@ -40,18 +40,12 @@ controls: false
 
 --
 
-<p class="media-container fill-w fill-h"><iframe src="https://www.youtube.com/embed/-Y77cUI_z30?t=4s" frameborder="0" allowfullscreen></iframe></p>
-<p class="caption">[Physical Web lost dog demo](https://youtu.be/-Y77cUI_z30)</p>
-
---
-
-<p class="media-container fill-w fill-h"><iframe width="560" height="315" src="https://www.youtube.com/embed/b0GDk-53fTo?t=4s" frameborder="0" allowfullscreen></iframe></p>
-<p class="caption">[Physical Web restaurant buzzer](https://youtu.be/b0GDk-53fTo)</p>
-
---
-
 <p class="media-container"><img src="images/pokemon-go-smartwatch.png" alt="Pokemon Go Plus watch" width="60%"/></p>
 <p class="caption">[Pokemon Go Plus watch](http://www.pokemongo.com/en-us/pokemon-go-plus/)</p>
+
+--
+
+<p class="media-container">![Bluetooth friends](images/bluetooth-friends.png)</p>
 
 --
 
@@ -173,7 +167,29 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<h2>Testing</h2>
+<h2>Physical Web</h2>
+
+<p class="media-container"><img src="images/physical-web-logo.png" alt="Physical Web logo" width="30%"/></p>
+<p class="caption>A discovery service for 'smart' objects</p>
+
+--
+
+<p class="media-container">![Physical Web bus example](images/physical-web-bus.png)</p>
+<p class="caption">["London buses test out the Physical Web"](http://marketingland.com/london-buses-test-first-consumer-experience-physical-web-170529)</p>
+
+--
+
+<p class="media-container fill-w fill-h"><iframe width="560" height="315" src="https://www.youtube.com/embed/b0GDk-53fTo?t=4s" frameborder="0" allowfullscreen></iframe></p>
+<p class="caption">[Physical Web restaurant buzzer](https://youtu.be/b0GDk-53fTo)</p>
+
+--
+
+<h2>Eddystone-URL</h2>
+<p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="50%"/></p>
+
+--
+
+<h2>Bluetooth Testing</h2>
 
 --
 
@@ -223,7 +239,7 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<h2>We can now program the physical world.</h2>
+<h2>The physical world is now at your command.</h2>
 
 --
 
