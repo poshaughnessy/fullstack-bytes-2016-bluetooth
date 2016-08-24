@@ -174,7 +174,7 @@ light green : #a6e22e
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
-  background-color: #191919;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -200,6 +200,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: #fff;
 }
 
 .slide-content {

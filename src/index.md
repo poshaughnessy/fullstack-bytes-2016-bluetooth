@@ -31,7 +31,7 @@ controls: false
 
 --
 
-<h2>...And your smartphone <br> is at the centre.</h2>
+<h2>...And your smartphone is at the centre.</h2>
 
 --
 
@@ -63,20 +63,22 @@ controls: false
 
 --
 
-<p class="media-container fill-h">![BLE profiles etc.](images/bluetooth-profiles-etc.png)</p>
+<h2>Generic ATTribute profile (GATT)</h2>
+<p class="media-container"><img src="images/bluetooth-profiles-etc.png" alt="GATT" width="40%"/></p>
 
 --
 
-<p class="media-container fill-w">![BLE characteristic properties](images/ble-characteristic-props.png)</p>
-<p class="caption">Generic ATTribute profile (GATT)</p>
+<p class="media-container"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties" width="75%"/></p>
 
 --
 
-## Comms based on Hex
+## Hex in JavaScript
 
 * `0xff === 255`
 * `parseInt('ff', 16) === 255`
-* [Uint8Array and DataView](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/) useful for data buffers
+* ArrayBuffer, Uint8Array and DataView
+
+[bit.ly/html5-rocks-typed-arrays-guide](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/)
 
 --
 
@@ -127,7 +129,7 @@ More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
 
 <img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/>
 
-"Watch this space..."
+*Watch this space...*
 
 --
 
@@ -213,17 +215,17 @@ A discovery service for 'smart' objects
 --
 
 <p class="media-container fill-h">![CySmart](images/cysmart.png)</p>
-<p class="caption">CySmart with CySmart BLE dongle</p>
+<p class="caption">[CySmart with CySmart BLE dongle (Windows)](http://www.cypress.com/documentation/software-and-drivers/cysmart-bluetooth-le-test-and-debug-tool)</p>
 
 --
 
-<p class="media-container">![CySmart app](images/cysmart-app.webp)</p>
-<p class="caption">CySmart app on App Store and Play Store</p>
+<p class="media-container">![CySmart app](images/bluetooth-debugging-apps.png)</p>
+<p class="caption">Bluetooth debugging apps: LightBlue, Bluefruit, CySmart</p>
 
 --
 
 <p class="media-container fill-h">![Wireshark](images/adafruit-ble-sniff.jpg)</p>
-<p class="caption">Wireshark with Bluefruit BLE sniffer</p>
+<p class="caption">[Wireshark](https://www.wireshark.org/) with [Bluefruit BLE sniffer](https://shop.pimoroni.com/products/adafruit-bluefruit-le-sniffer-ble-4-0-nrf51822-v1-0)</p>
 
 --
 

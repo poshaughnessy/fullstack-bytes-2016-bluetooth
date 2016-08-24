@@ -531,7 +531,7 @@ light green : #a6e22e
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
-  background-color: #191919;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -557,6 +557,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: #fff;
 }
 
 .slide-content {
@@ -975,7 +976,7 @@ pre .xml .cdata {
     <section class="slide-content"><h2>The physical world and the digital world are merging...</h2></section>
   </div>
   <div class="slide hidden" id="slide-5">
-    <section class="slide-content"><h2>...And your smartphone <br> is at the centre.</h2></section>
+    <section class="slide-content"><h2>...And your smartphone is at the centre.</h2></section>
   </div>
   <div class="slide hidden" id="slide-6">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/anki-overdrive.gif" alt="Anki Overdrive"></p>
@@ -1003,19 +1004,20 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><p class="media-container fill-h"><img src="images/bluetooth-profiles-etc.png" alt="BLE profiles etc."></p></section>
+    <section class="slide-content"><p><h2>Generic ATTribute profile (GATT)</h2></p>
+<p class="media-container"><img src="images/bluetooth-profiles-etc.png" alt="GATT" width="40%"/></p></section>
   </div>
   <div class="slide hidden" id="slide-12">
-    <section class="slide-content"><p class="media-container fill-w"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties"></p>
-<p class="caption">Generic ATTribute profile (GATT)</p></section>
+    <section class="slide-content"><p class="media-container"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties" width="75%"/></p></section>
   </div>
   <div class="slide hidden" id="slide-13">
-    <section class="slide-content"><h2 id="comms-based-on-hex">Comms based on Hex</h2>
+    <section class="slide-content"><h2 id="hex-in-javascript">Hex in JavaScript</h2>
 <ul>
 <li><code>0xff === 255</code></li>
 <li><code>parseInt(&#39;ff&#39;, 16) === 255</code></li>
-<li><a href="http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/">Uint8Array and DataView</a> useful for data buffers</li>
+<li>ArrayBuffer, Uint8Array and DataView</li>
 </ul>
+<p><a href="http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/">bit.ly/html5-rocks-typed-arrays-guide</a></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-14">
@@ -1060,7 +1062,7 @@ pre .xml .cdata {
   <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="samsung-internet">Samsung Internet</h2>
 <p><img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/></p>
-<p>&quot;Watch this space...&quot;</p>
+<p><em>Watch this space...</em></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-21">
@@ -1134,15 +1136,15 @@ navigator.bluetooth.requestDevice(options)</code></pre>
   </div>
   <div class="slide hidden" id="slide-33">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/cysmart.png" alt="CySmart"></p>
-<p class="caption">CySmart with CySmart BLE dongle</p></section>
+<p class="caption"><a href="http://www.cypress.com/documentation/software-and-drivers/cysmart-bluetooth-le-test-and-debug-tool">CySmart with CySmart BLE dongle (Windows)</a></p></section>
   </div>
   <div class="slide hidden" id="slide-34">
-    <section class="slide-content"><p class="media-container"><img src="images/cysmart-app.webp" alt="CySmart app"></p>
-<p class="caption">CySmart app on App Store and Play Store</p></section>
+    <section class="slide-content"><p class="media-container"><img src="images/bluetooth-debugging-apps.png" alt="CySmart app"></p>
+<p class="caption">Bluetooth debugging apps: LightBlue, Bluefruit, CySmart</p></section>
   </div>
   <div class="slide hidden" id="slide-35">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
-<p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
+<p class="caption"><a href="https://www.wireshark.org/">Wireshark</a> with <a href="https://shop.pimoroni.com/products/adafruit-bluefruit-le-sniffer-ble-4-0-nrf51822-v1-0">Bluefruit BLE sniffer</a></p></section>
   </div>
   <div class="slide hidden" id="slide-36">
     <section class="slide-content"><p><h2>Demo time</h2></p>
