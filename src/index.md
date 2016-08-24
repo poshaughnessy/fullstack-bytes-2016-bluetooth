@@ -1,7 +1,8 @@
 title: Bluetooth for Web Developers
 output: public/index.html
 style: styles.css
-controls: false
+script: script.js
+controls: true
 
 --
 

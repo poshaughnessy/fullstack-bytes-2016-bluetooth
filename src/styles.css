@@ -279,6 +279,14 @@ img {
   border-left-width: 0;
 }
 
+.prev:hover {
+  border-top-color: transparent;
+  border-right-width: 25px;
+  border-bottom-color: transparent;
+  border-left-width: 0;
+  border-left-color: #272822;
+}
+
 .next {
   border-top-color: transparent;
   border-right-color: transparent;
@@ -287,14 +295,12 @@ img {
   border-left-width: 25px;
 }
 
-.prev:hover {
-  border-right-color: #efefef;
-  cursor: pointer;
-}
-
 .next:hover {
-  border-left-color: #efefef;
-  cursor: pointer;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-left-width: 25px;
+  border-left-color: #272822;
 }
 
 h1,
@@ -594,4 +600,12 @@ pre .xml .cdata {
 
 #slide-21 code {
   font-size: 1.3em;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  .slide-content {
+    font-size: 1em;
+  }
 }
