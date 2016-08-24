@@ -574,6 +574,14 @@ body {
   margin: 0;
 }
 
+.group-closer {
+  margin-bottom: 1.5em;
+}
+
+.group-closer p {
+  margin-bottom: 0.5em;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -753,20 +761,15 @@ p {
 }
 
 .media-container {
-  max-height: -webkit-calc(100% - 1.3em);
-  max-height: calc(100% - 1.3em);
+  max-height: -webkit-calc(95vh - 2em);
+  max-height: calc(95vh - 2em);
   margin: 0;
 }
 
 .media-container.fill-h {
-  height: -webkit-calc(85vh - 1.3em);
-  height: calc(85vh - 1.3em);
+  height: -webkit-calc(85vh - 2em);
+  height: calc(85vh - 2em);
   margin-top: 4%;
-}
-
-.my-name,
-.twitter {
-  margin-bottom: 0.5em;
 }
 
 a {
@@ -954,10 +957,10 @@ pre .xml .cdata {
   <div class="slide" id="slide-1">
     <section class="slide-content"><h1 id="web-bluetooth">Web Bluetooth</h1>
 <h3 id="how-to-control-a-drone-from-your-browser-and-more">How to control a drone from your browser and more</h3>
-<p class="my-name">Peter O&#39;Shaughnessy</p>
-
-<p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
-</section>
+<div class="group-closer">
+  <p>Peter O&#39;Shaughnessy</p>
+  <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+</div></section>
   </div>
   <div class="slide hidden" id="slide-2">
     <section class="slide-content"><p><h2>Samsung Internet</h2></p>
@@ -1054,7 +1057,7 @@ pre .xml .cdata {
   </div>
   <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="origin-trial">Origin Trial</h2>
-<p>Chrome Beta</p>
+<p>Chrome Beta or Chrome Dev (Chrome stable soon)</p>
 <p>Register at: <a href="http://bit.ly/WebBluetoothOriginTrial">bit.ly/WebBluetoothOriginTrial</a></p>
 <p>More info: <a href="https://bit.ly/OriginTrials">bit.ly/OriginTrials</a></p>
 </section>
@@ -1113,18 +1116,20 @@ navigator.bluetooth.requestDevice(options)</code></pre>
 </ul></section>
   </div>
   <div class="slide hidden" id="slide-29">
-    <section class="slide-content"><p class="media-container"><img src="images/cysmart.png" alt="CySmart"></p>
+    <section class="slide-content"><p class="media-container fill-h"><img src="images/cysmart.png" alt="CySmart"></p>
 <p class="caption">CySmart with CySmart BLE dongle</p></section>
   </div>
   <div class="slide hidden" id="slide-30">
-    <section class="slide-content"><p class="media-container"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
-<p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
+    <section class="slide-content"><p class="media-container"><img src="images/cysmart-app.webp" alt="CySmart app"></p>
+<p class="caption">CySmart app on App Store and Play Store</p></section>
   </div>
   <div class="slide hidden" id="slide-31">
-    <section class="slide-content"><h2>Demo time</h2></section>
+    <section class="slide-content"><p class="media-container fill-h"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
+<p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
   </div>
   <div class="slide hidden" id="slide-32">
-    <section class="slide-content"><p class="media-container"><img src="images/web-drone-screenshot.png" alt="web-bluetooth-parrot-drone"></p>
+    <section class="slide-content"><p><h2>Demo time</h2></p>
+<p class="no-margin"><img src="images/web-drone-screenshot.png" width="30%" alt="Web Drone Controller"/></p>
 <p class="caption"><a href="http://bit.ly/web-bluetooth-drone">bit.ly/web-bluetooth-drone</a></p></section>
   </div>
   <div class="slide hidden" id="slide-33">
@@ -1141,11 +1146,17 @@ navigator.bluetooth.requestDevice(options)</code></pre>
   <div class="slide hidden" id="slide-36">
     <section class="slide-content"><h1>Thanks!</h1>
 
-<p class="my-name">Peter O&#39;Shaughnessy</p>
-<p class="twitter"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+<div class="group-closer">
+  <p>Peter O&#39;Shaughnessy</p>
+  <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+  <p><a href="http://peteroshaughnessy.com">peteroshaughnessy.com</a></p>
+</div>
 
-<p><a href="http://peteroshaughnessy.com">peteroshaughnessy.com</a></p>
-</section>
+<div class="group-closer">
+  <p>Samsung Internet Developer Relations</p>
+  <p><a href="https://twitter.com/sbrowserdevrel">@sbrowserdevrel</a></p>
+  <p><a href="https://medium.com/samsung-internet-dev">medium.com/samsung-internet-dev</a></p>
+</div></section>
   </div>
 
 

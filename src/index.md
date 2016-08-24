@@ -9,9 +9,10 @@ controls: false
 
 ### How to control a drone from your browser and more 
 
-<p class="my-name">Peter O'Shaughnessy</p>
-
-[@poshaughnessy](https://twitter.com/poshaughnessy)
+<div class="group-closer">
+  <p>Peter O'Shaughnessy</p>
+  <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+</div>
 
 --
 
@@ -120,7 +121,7 @@ controls: false
 
 ## Origin Trial
 
-Chrome Beta
+Chrome Beta or Chrome Dev (Chrome stable soon)
 
 Register at: [bit.ly/WebBluetoothOriginTrial](http://bit.ly/WebBluetoothOriginTrial)
 
@@ -192,21 +193,23 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<p class="media-container">![CySmart](images/cysmart.png)</p>
+<p class="media-container fill-h">![CySmart](images/cysmart.png)</p>
 <p class="caption">CySmart with CySmart BLE dongle</p>
 
 --
 
-<p class="media-container">![Wireshark](images/adafruit-ble-sniff.jpg)</p>
+<p class="media-container">![CySmart app](images/cysmart-app.webp)</p>
+<p class="caption">CySmart app on App Store and Play Store</p>
+
+--
+
+<p class="media-container fill-h">![Wireshark](images/adafruit-ble-sniff.jpg)</p>
 <p class="caption">Wireshark with Bluefruit BLE sniffer</p>
 
 --
 
 <h2>Demo time</h2>
-
---
-
-<p class="media-container">![web-bluetooth-parrot-drone](images/web-drone-screenshot.png)</p>
+<p class="no-margin"><img src="images/web-drone-screenshot.png" width="30%" alt="Web Drone Controller"/></p>
 <p class="caption">[bit.ly/web-bluetooth-drone](http://bit.ly/web-bluetooth-drone)</p>
 
 --
@@ -226,7 +229,14 @@ navigator.bluetooth.requestDevice(options)
 
 <h1>Thanks!</h1>
 
-<p class="my-name">Peter O'Shaughnessy</p>
-<p class="twitter">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+<div class="group-closer">
+  <p>Peter O'Shaughnessy</p>
+  <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+  <p>[peteroshaughnessy.com](http://peteroshaughnessy.com)</p>
+</div>
 
-[peteroshaughnessy.com](http://peteroshaughnessy.com)
+<div class="group-closer">
+  <p>Samsung Internet Developer Relations</p>
+  <p>[@sbrowserdevrel](https://twitter.com/sbrowserdevrel)</p>
+  <p>[medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev)</p>
+</div>
