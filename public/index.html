@@ -1015,6 +1015,9 @@ pre .xml .cdata {
     <section class="slide-content"><p class="media-container"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties" width="75%"/></p></section>
   </div>
   <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><p class="media-container fill-w"><img src="images/bybox-comms.png" alt="BLE comms"></p></section>
+  </div>
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h2 id="hex-in-javascript">Hex in JavaScript</h2>
 <ul>
 <li><code>0xff === 255</code></li>
@@ -1024,10 +1027,27 @@ pre .xml .cdata {
 <p><a href="http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/">bit.ly/html5-rocks-typed-arrays-guide</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
-    <section class="slide-content"><p class="media-container fill-w"><img src="images/bybox-comms.png" alt="BLE comms"></p></section>
-  </div>
   <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Length of 12 bytes</span>
+<span class="hljs-keyword">let</span> buffer = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ArrayBuffer</span>(<span class="hljs-number">12</span>);
+
+<span class="hljs-comment">// ...Read data into the buffer...</span>
+
+<span class="hljs-keyword">let</span> array = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer);
+
+<span class="hljs-comment">// Gives e.g. 255 / 0xff:</span>
+<span class="hljs-keyword">let</span> my8BitInt = array[<span class="hljs-number">0</span>];</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> buffer = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ArrayBuffer</span>(<span class="hljs-number">12</span>);
+<span class="hljs-keyword">let</span> dataView = <span class="hljs-keyword">new</span> <span class="hljs-built_in">DataView</span>(buffer);
+
+<span class="hljs-comment">// Gives e.g. 255 / 0xff:</span>
+<span class="hljs-keyword">let</span> my8BitInt = dataView.getUint8(<span class="hljs-number">0</span>);</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><h2 id="javascript-friendly-options">JavaScript-friendly options</h2>
 <ul>
 <li>Node</li>
@@ -1037,39 +1057,39 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><h2 id="web-bluetooth">Web Bluetooth</h2>
 <p><img src="images/ble-logo.png" alt="BLE logo" class="w-300"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><p><img src="images/web-bluetooth-caniuse.png" alt="caniuse.com"></p>
 <p class="caption">caniuse.com</p></section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><ul>
-<li>Chrome for Android (Marshmallow)</li>
-<li>Chrome OS</li>
-<li>Firefox OS</li>
+<li>Chrome</li>
+<li>Chrome for Android (Marshmallow +)</li>
 <li>Opera</li>
+<li>Firefox OS</li>
 </ul>
 <p><img src="images/web-bluetooth-flag.png" alt="Web Bluetooth flag"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h2 id="origin-trial">Origin Trial</h2>
 <p>Chrome Beta or Chrome Dev (Chrome stable soon)</p>
 <p>Register at: <a href="http://bit.ly/WebBluetoothOriginTrial">bit.ly/WebBluetoothOriginTrial</a></p>
 <p>More info: <a href="https://bit.ly/OriginTrials">bit.ly/OriginTrials</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-22">
     <section class="slide-content"><h2 id="samsung-internet">Samsung Internet</h2>
 <p><img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/></p>
 <p><em>Watch this space...</em></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><pre><code class="lang-javascript">navigator.bluetooth.requestDevice({
   filters: [{
     name: <span class="hljs-string">'SomeAmazingRobot'</span>
@@ -1079,10 +1099,10 @@ pre .xml .cdata {
 ...</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-22">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/bluetooth-pairing-prompt.png" alt="Bluetooth pairing prompt"/></p></section>
   </div>
-  <div class="slide hidden" id="slide-23">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><pre><code class="lang-javascript">  ...
   .then(device =&gt; device.connectGATT())  
   .then(server =&gt; server.getPrimaryService(<span class="hljs-string">'batt_service'</span>))
@@ -1100,7 +1120,7 @@ pre .xml .cdata {
   });</code></pre>
 <div class="caption"><a href="http://bit.ly/chrome-bluetooth-guide">bit.ly/chrome-bluetooth-guide</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-24">
+  <div class="slide hidden" id="slide-26">
     <section class="slide-content"><h2>Physical Web</h2>
 
 <p class="media-container"><img src="images/physical-web-logo.png" alt="Physical Web logo" width="30%"/></p>
@@ -1108,70 +1128,70 @@ pre .xml .cdata {
 <p>A discovery service for &#39;smart&#39; objects</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-25">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><p class="media-container"><img src="images/physical-web-bus.png" alt="Physical Web bus example"></p>
 <p class="caption"><a href="http://marketingland.com/london-buses-test-first-consumer-experience-physical-web-170529">&quot;London buses test out the Physical Web&quot;</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-26">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><p class="media-container fill-w fill-h"><iframe width="560" height="315" src="https://www.youtube.com/embed/b0GDk-53fTo?t=4s" frameborder="0" allowfullscreen></iframe></p>
 <p class="caption"><a href="https://youtu.be/b0GDk-53fTo">Physical Web restaurant buzzer</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-27">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><p><p class="media-container fill-h"><img src="images/physical-web-enable.png" alt="Enabling Physical Web"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-28">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><p><h2>Eddystone-URL</h2></p>
 <p class="media-container"><img src="images/eddystone-format.png" alt="Eddystone URL format" width="65%"/></p></section>
   </div>
-  <div class="slide hidden" id="slide-29">
+  <div class="slide hidden" id="slide-31">
     <section class="slide-content"><h2>Bluetooth Testing</h2></section>
   </div>
-  <div class="slide hidden" id="slide-30">
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><blockquote>
 <p>“This is a short list of issues you will encounter if you try to use native Android BLE...”</p>
 </blockquote>
 </section>
   </div>
-  <div class="slide hidden" id="slide-31">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/sweetblue.png" alt="Sweetblue"></p>
 <p class="caption"><a href="http://bit.ly/sweetblue-android">bit.ly/sweetblue-android</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><ul>
   <li>Start with a small list of supported devices</li>
   <li>Allow lots of time for device testing</li>
 </ul></section>
   </div>
-  <div class="slide hidden" id="slide-33">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/cysmart.png" alt="CySmart"></p>
 <p class="caption"><a href="http://www.cypress.com/documentation/software-and-drivers/cysmart-bluetooth-le-test-and-debug-tool">CySmart with CySmart BLE dongle (Windows)</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-34">
+  <div class="slide hidden" id="slide-36">
     <section class="slide-content"><p class="media-container"><img src="images/bluetooth-debugging-apps.png" alt="CySmart app"></p>
 <p class="caption">Bluetooth debugging apps: LightBlue, Bluefruit, CySmart</p></section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-37">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/adafruit-ble-sniff.jpg" alt="Wireshark"></p>
 <p class="caption"><a href="https://www.wireshark.org/">Wireshark</a> with <a href="https://shop.pimoroni.com/products/adafruit-bluefruit-le-sniffer-ble-4-0-nrf51822-v1-0">Bluefruit BLE sniffer</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-38">
     <section class="slide-content"><p><h2>Demo time</h2></p>
 <p class="no-margin"><img src="images/web-drone-screenshot.png" width="30%" alt="Web Drone Controller"/></p>
 <p class="caption"><a href="http://bit.ly/web-bluetooth-drone">bit.ly/web-bluetooth-drone</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden" id="slide-39">
     <section class="slide-content"><p><h2>In case of demo fail</h2>
 <a href="https://youtu.be/gXu3G3cg52k">bit.ly/web-bluetooth-drone-vid</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden" id="slide-40">
     <section class="slide-content"><h2>Code time</h2></section>
   </div>
-  <div class="slide hidden" id="slide-39">
+  <div class="slide hidden" id="slide-41">
     <section class="slide-content"><h2>The physical world is now at your command.</h2></section>
   </div>
-  <div class="slide hidden" id="slide-40">
+  <div class="slide hidden" id="slide-42">
     <section class="slide-content"><h1>Thanks!</h1>
 
 <div class="group-closer">

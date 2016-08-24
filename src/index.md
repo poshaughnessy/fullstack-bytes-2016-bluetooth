@@ -72,6 +72,10 @@ controls: false
 
 --
 
+<p class="media-container fill-w">![BLE comms](images/bybox-comms.png)</p>
+
+--
+
 ## Hex in JavaScript
 
 * `0xff === 255`
@@ -82,7 +86,27 @@ controls: false
 
 --
 
-<p class="media-container fill-w">![BLE comms](images/bybox-comms.png)</p>
+```javascript
+// Length of 12 bytes
+let buffer = new ArrayBuffer(12);
+
+// ...Read data into the buffer...
+
+let array = new Uint8Array(buffer);
+
+// Gives e.g. 255 / 0xff:
+let my8BitInt = array[0]; 
+```
+
+--
+
+```javascript
+let buffer = new ArrayBuffer(12);
+let dataView = new DataView(buffer);
+
+// Gives e.g. 255 / 0xff:
+let my8BitInt = dataView.getUint8(0); 
+```
 
 --
 
@@ -106,10 +130,10 @@ controls: false
 
 --
 
-* Chrome for Android (Marshmallow)
-* Chrome OS
-* Firefox OS
+* Chrome
+* Chrome for Android (Marshmallow +)
 * Opera
+* Firefox OS
 
 ![Web Bluetooth flag](images/web-bluetooth-flag.png)
 
