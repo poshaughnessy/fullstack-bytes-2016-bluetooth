@@ -550,20 +550,28 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 10%;
+  padding: 4%;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .slide-content {
-  height: 100%;
   width: 100%;
+  height: auto;
   padding: 0;
   margin: 0 auto;
   font-size: 200%;
   font-weight: 200;
   line-height: 1.375;
+  overflow: auto;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 img {
@@ -644,13 +652,13 @@ h3 {
 }
 
 h1 {
-  margin: 0.5em 0;
+  margin: 0 0 0.5em 0;
   font-size: 250%;
   line-height: 1.2;
 }
 
 h2 {
-  margin: 0.5em 0;
+  margin: 0 0 0.5em 0;
   font-size: 150%;
   font-weight: 200;
   line-height: 1.4;
@@ -745,9 +753,20 @@ p {
 }
 
 .media-container {
-  height: -webkit-calc(100% - 1.3em);
-  height: calc(100% - 1.3em);
+  max-height: -webkit-calc(100% - 1.3em);
+  max-height: calc(100% - 1.3em);
   margin: 0;
+}
+
+.media-container.fill-h {
+  height: -webkit-calc(85vh - 1.3em);
+  height: calc(85vh - 1.3em);
+  margin-top: 4%;
+}
+
+.my-name,
+.twitter {
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -933,39 +952,50 @@ pre .xml .cdata {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="how-to-control-a-drone-from-your-browser">How to Control a Drone from your Browser</h1>
-<h3 id="and-more-with-web-bluetooth">And More - with Web Bluetooth</h3>
+    <section class="slide-content"><h1 id="web-bluetooth">Web Bluetooth</h1>
+<h3 id="how-to-control-a-drone-from-your-browser-and-more">How to control a drone from your browser and more</h3>
+<p class="my-name">Peter O&#39;Shaughnessy</p>
+
 <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-2">
-    <section class="slide-content"><h2 class="vertical-center">The physical world and the digital world are merging...</h2></section>
+    <section class="slide-content"><p><h2>Samsung Internet</h2></p>
+<p class="no-margin"><img src="images/samsunginternet.png" alt="Samsung Internet" width="45%"></p>
+<p class="caption"><a href="http://bit.ly/what-is-samsung-internet">bit.ly.what-is-samsung-internet</a></p></section>
   </div>
   <div class="slide hidden" id="slide-3">
-    <section class="slide-content"><h2 class="vertical-center">...And your smartphone <br> is at the centre.</h2></section>
+    <section class="slide-content"><p class="media-container fill-h"><img src="images/bybox-stockonnect.gif" alt="ByBox"></p>
+<p class="caption"><a href="https://www.bybox.com/">ByBox Stockonnect app developed by pebble {code}</a></p></section>
   </div>
   <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h2>The physical world and the digital world are merging...</h2></section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h2>...And your smartphone <br> is at the centre.</h2></section>
+  </div>
+  <div class="slide hidden" id="slide-6">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/anki-overdrive.gif" alt="Anki Overdrive"></p>
 <p class="caption"><a href="https://anki.com">Anki Overdrive</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden" id="slide-7">
     <section class="slide-content"><p class="media-container fill-w fill-h"><iframe src="https://www.youtube.com/embed/-Y77cUI_z30?t=4s" frameborder="0" allowfullscreen></iframe></p>
 <p class="caption"><a href="https://youtu.be/-Y77cUI_z30">Physical Web lost dog demo</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><p class="media-container fill-w fill-h"><iframe width="560" height="315" src="https://www.youtube.com/embed/b0GDk-53fTo?t=4s" frameborder="0" allowfullscreen></iframe></p>
 <p class="caption"><a href="https://youtu.be/b0GDk-53fTo">Physical Web restaurant buzzer</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><p class="media-container"><img src="images/pokemon-go-smartwatch.png" alt="Pokemon Go Plus watch"></p>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><p class="media-container"><img src="images/pokemon-go-smartwatch.png" alt="Pokemon Go Plus watch" width="60%"/></p>
 <p class="caption"><a href="http://www.pokemongo.com/en-us/pokemon-go-plus/">Pokemon Go Plus watch</a></p></section>
   </div>
-  <div class="slide hidden" id="slide-8">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h2 id="bluetooth-low-energy">Bluetooth Low Energy</h2>
 <p><img src="images/ble-phone.png" alt="BLE"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><p><img src="images/ble-logo.png" alt="BLE logo" class="w-200"/></p>
 <ul>
 <li>Can constantly advertise presence</li>
@@ -974,14 +1004,14 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><p class="media-container fill-h"><img src="images/bluetooth-profiles-etc.png" alt="BLE profiles etc."></p></section>
   </div>
-  <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><p class="media-container vertical-center fill-w"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties"></p>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><p class="media-container fill-w"><img src="images/ble-characteristic-props.png" alt="BLE characteristic properties"></p>
 <p class="caption">Generic ATTribute profile (GATT)</p></section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h2 id="comms-based-on-hex">Comms based on Hex</h2>
 <ul>
 <li><code>0xff === 255</code></li>
@@ -990,19 +1020,13 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
-    <section class="slide-content"><h2 class="vertical-center">Here&#39;s one I helped make earlier...</h2></section>
-  </div>
-  <div class="slide hidden" id="slide-14">
-    <section class="slide-content"><p class="media-container fill-h"><img src="images/bybox-stockonnect.gif" alt="ByBox"></p>
-<p class="caption"><a href="https://www.bybox.com/">ByBox Stockonnect app developed by pebble {code}</a></p></section>
-  </div>
   <div class="slide hidden" id="slide-15">
-    <section class="slide-content"><p class="media-container vertical-center fill-w"><img src="images/bybox-comms.png" alt="BLE comms"></p></section>
+    <section class="slide-content"><p class="media-container fill-w"><img src="images/bybox-comms.png" alt="BLE comms"></p></section>
   </div>
   <div class="slide hidden" id="slide-16">
     <section class="slide-content"><h2 id="javascript-friendly-options">JavaScript-friendly options</h2>
 <ul>
+<li>Node</li>
 <li>Cordova</li>
 <li>React Native</li>
 <li>Web Bluetooth</li>
@@ -1015,10 +1039,8 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-18">
-    <section class="slide-content"><div class="vertical-center">
-    <img src="images/web-bluetooth-caniuse.png" alt="caniuse.com">
-    <p class="caption">caniuse.com</p>
-</div></section>
+    <section class="slide-content"><p><img src="images/web-bluetooth-caniuse.png" alt="caniuse.com"></p>
+<p class="caption">caniuse.com</p></section>
   </div>
   <div class="slide hidden" id="slide-19">
     <section class="slide-content"><ul>
@@ -1032,6 +1054,7 @@ pre .xml .cdata {
   </div>
   <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="origin-trial">Origin Trial</h2>
+<p>Chrome Beta</p>
 <p>Register at: <a href="http://bit.ly/WebBluetoothOriginTrial">bit.ly/WebBluetoothOriginTrial</a></p>
 <p>More info: <a href="https://bit.ly/OriginTrials">bit.ly/OriginTrials</a></p>
 </section>
@@ -1039,7 +1062,7 @@ pre .xml .cdata {
   <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h2 id="samsung-internet">Samsung Internet</h2>
 <p><img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/></p>
-<p>Watch this space...</p>
+<p>&quot;Watch this space...&quot;</p>
 </section>
   </div>
   <div class="slide hidden" id="slide-22">
@@ -1071,7 +1094,7 @@ navigator.bluetooth.requestDevice(options)</code></pre>
 <div class="caption"><a href="http://bit.ly/chrome-bluetooth-guide">bit.ly/chrome-bluetooth-guide</a></div></section>
   </div>
   <div class="slide hidden" id="slide-25">
-    <section class="slide-content"><h2 class="vertical-center">Testing</h2></section>
+    <section class="slide-content"><h2>Testing</h2></section>
   </div>
   <div class="slide hidden" id="slide-26">
     <section class="slide-content"><blockquote>
@@ -1084,12 +1107,10 @@ navigator.bluetooth.requestDevice(options)</code></pre>
 <p class="caption"><a href="http://bit.ly/sweetblue-android">bit.ly/sweetblue-android</a></p></section>
   </div>
   <div class="slide hidden" id="slide-28">
-    <section class="slide-content"><div class="vertical-center">
-  <ul>
-      <li>Start with a small list of supported devices</li>
-      <li>Allow lots of time for device testing</li>
-  </ul>
-</div></section>
+    <section class="slide-content"><ul>
+  <li>Start with a small list of supported devices</li>
+  <li>Allow lots of time for device testing</li>
+</ul></section>
   </div>
   <div class="slide hidden" id="slide-29">
     <section class="slide-content"><p class="media-container"><img src="images/cysmart.png" alt="CySmart"></p>
@@ -1100,28 +1121,30 @@ navigator.bluetooth.requestDevice(options)</code></pre>
 <p class="caption">Wireshark with Bluefruit BLE sniffer</p></section>
   </div>
   <div class="slide hidden" id="slide-31">
-    <section class="slide-content"><h2 class="vertical-center">Demo time</h2></section>
+    <section class="slide-content"><h2>Demo time</h2></section>
   </div>
   <div class="slide hidden" id="slide-32">
     <section class="slide-content"><p class="media-container"><img src="images/web-drone-screenshot.png" alt="web-bluetooth-parrot-drone"></p>
 <p class="caption"><a href="http://bit.ly/web-bluetooth-drone">bit.ly/web-bluetooth-drone</a></p></section>
   </div>
   <div class="slide hidden" id="slide-33">
-    <section class="slide-content"><div class="vertical-center">
-    <h2>In case of demo fail</h2>
-    <a href="https://youtu.be/-FO9thLaiug">bit.ly/web-bluetooth-drone-video</a>
-</div></section>
+    <section class="slide-content"><p><h2>In case of demo fail</h2>
+<a href="https://youtu.be/gXu3G3cg52k">bit.ly/web-bluetooth-drone-vid</a></p>
+</section>
   </div>
   <div class="slide hidden" id="slide-34">
-    <section class="slide-content"><h2 class="vertical-center">Code time</h2></section>
+    <section class="slide-content"><h2>Code time</h2></section>
   </div>
-  <div class="slide hidden author-slide" id="slide-35">
-    <section class="slide-content"><div class="author">
-  <h1 class="name">Thank you.</h1>
-    <h3 class="twitter">
-      <a href="http://twitter.com/@poshaughnessy">@poshaughnessy</a>
-    </h3>
-</div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><h2>We can now program the physical world.</h2></section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><h1>Thanks!</h1>
+
+<p class="my-name">Peter O&#39;Shaughnessy</p>
+<p class="twitter"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+
+<p><a href="http://peteroshaughnessy.com">peteroshaughnessy.com</a></p>
 </section>
   </div>
 

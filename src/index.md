@@ -1,26 +1,36 @@
 title: Bluetooth for Web Developers
-author:
-  name: Thank you.
-  twitter: poshaughnessy
 output: public/index.html
 style: styles.css
 controls: false
 
 --
 
-# How to Control a Drone from your Browser
+# Web Bluetooth
 
-### And More - with Web Bluetooth
+### How to control a drone from your browser and more 
+
+<p class="my-name">Peter O'Shaughnessy</p>
 
 [@poshaughnessy](https://twitter.com/poshaughnessy)
 
 --
 
-<h2 class="vertical-center">The physical world and the digital world are merging...</h2>
+<h2>Samsung Internet</h2>
+<p class="no-margin"><img src="images/samsunginternet.png" alt="Samsung Internet" width="45%"></p>
+<p class="caption"><a href="http://bit.ly/what-is-samsung-internet">bit.ly.what-is-samsung-internet</a></p>
 
 --
 
-<h2 class="vertical-center">...And your smartphone <br> is at the centre.</h2>
+<p class="media-container fill-h">![ByBox](images/bybox-stockonnect.gif)</p>
+<p class="caption">[ByBox Stockonnect app developed by pebble {code}](https://www.bybox.com/)</p>
+
+--
+
+<h2>The physical world and the digital world are merging...</h2>
+
+--
+
+<h2>...And your smartphone <br> is at the centre.</h2>
 
 --
 
@@ -39,7 +49,7 @@ controls: false
 
 --
 
-<p class="media-container">![Pokemon Go Plus watch](images/pokemon-go-smartwatch.png)</p>
+<p class="media-container"><img src="images/pokemon-go-smartwatch.png" alt="Pokemon Go Plus watch" width="60%"/></p>
 <p class="caption">[Pokemon Go Plus watch](http://www.pokemongo.com/en-us/pokemon-go-plus/)</p>
 
 --
@@ -62,7 +72,7 @@ controls: false
 
 --
 
-<p class="media-container vertical-center fill-w">![BLE characteristic properties](images/ble-characteristic-props.png)</p>
+<p class="media-container fill-w">![BLE characteristic properties](images/ble-characteristic-props.png)</p>
 <p class="caption">Generic ATTribute profile (GATT)</p>
 
 --
@@ -75,21 +85,13 @@ controls: false
 
 --
 
-<h2 class="vertical-center">Here's one I helped make earlier...</h2> 
-
---
-
-<p class="media-container fill-h">![ByBox](images/bybox-stockonnect.gif)</p>
-<p class="caption">[ByBox Stockonnect app developed by pebble {code}](https://www.bybox.com/)</p>
-
---
-
-<p class="media-container vertical-center fill-w">![BLE comms](images/bybox-comms.png)</p>
+<p class="media-container fill-w">![BLE comms](images/bybox-comms.png)</p>
 
 --
 
 ## JavaScript-friendly options
 
+* Node
 * Cordova
 * React Native
 * Web Bluetooth
@@ -102,10 +104,8 @@ controls: false
 
 --
 
-<div class="vertical-center">
-    ![caniuse.com](images/web-bluetooth-caniuse.png)
-    <p class="caption">caniuse.com</p>
-</div>
+![caniuse.com](images/web-bluetooth-caniuse.png)
+<p class="caption">caniuse.com</p>
 
 --
 
@@ -120,8 +120,9 @@ controls: false
 
 ## Origin Trial
 
-Register at: [bit.ly/WebBluetoothOriginTrial](http://bit.ly/WebBluetoothOriginTrial)
+Chrome Beta
 
+Register at: [bit.ly/WebBluetoothOriginTrial](http://bit.ly/WebBluetoothOriginTrial)
 
 More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
 
@@ -131,7 +132,7 @@ More info: [bit.ly/OriginTrials](https://bit.ly/OriginTrials)
 
 <img src="images/samsunginternet.png" alt="Samsung Internet logo" class="w-300"/>
 
-Watch this space...
+"Watch this space..."
 
 --
 
@@ -171,7 +172,7 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<h2 class="vertical-center">Testing</h2>
+<h2>Testing</h2>
 
 --
 
@@ -184,12 +185,10 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<div class="vertical-center">
-  <ul>
-      <li>Start with a small list of supported devices</li>
-      <li>Allow lots of time for device testing</li>
-  </ul>
-</div>  
+<ul>
+  <li>Start with a small list of supported devices</li>
+  <li>Allow lots of time for device testing</li>
+</ul>  
 
 --
 
@@ -203,7 +202,7 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<h2 class="vertical-center">Demo time</h2>
+<h2>Demo time</h2>
 
 --
 
@@ -212,11 +211,22 @@ navigator.bluetooth.requestDevice(options)
 
 --
 
-<div class="vertical-center">
-    <h2>In case of demo fail</h2>
-    [bit.ly/web-bluetooth-drone-video](https://youtu.be/-FO9thLaiug)
-</div>
+<h2>In case of demo fail</h2>
+[bit.ly/web-bluetooth-drone-vid](https://youtu.be/gXu3G3cg52k)
 
 --
 
-<h2 class="vertical-center">Code time</h2>
+<h2>Code time</h2>
+
+--
+
+<h2>We can now program the physical world.</h2>
+
+--
+
+<h1>Thanks!</h1>
+
+<p class="my-name">Peter O'Shaughnessy</p>
+<p class="twitter">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+
+[peteroshaughnessy.com](http://peteroshaughnessy.com)
