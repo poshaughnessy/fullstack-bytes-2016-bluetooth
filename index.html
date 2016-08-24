@@ -858,6 +858,7 @@ pre .tex .special {
 
 pre code {
   color: #333;
+  font-size: 1.1em;
 }
 
 pre code .constant {
@@ -1083,7 +1084,6 @@ pre .xml .cdata {
   </div>
   <div class="slide hidden" id="slide-23">
     <section class="slide-content"><pre><code class="lang-javascript">  ...
-
   .then(device =&gt; device.connectGATT())  
   .then(server =&gt; server.getPrimaryService(<span class="hljs-string">'batt_service'</span>))
   .then(service =&gt; service.getCharacteristic(<span class="hljs-string">'batt_level'</span>))
@@ -1092,8 +1092,11 @@ pre .xml .cdata {
     <span class="hljs-keyword">return</span> characteristic.readValue();
   })
   .then(value =&gt; {
-    <span class="hljs-keyword">let</span> bytes = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(value.buffer);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Battery level: <span class="hljs-subst">${bytes[0]}</span>`</span>);
+    <span class="hljs-keyword">let</span> batteryLevel = value.getUint8(<span class="hljs-number">0</span>);
+    <span class="hljs-comment">// Or you could do: </span>
+    <span class="hljs-comment">// let array = new Uint8Array(value.buffer);</span>
+    <span class="hljs-comment">// batteryLevel = array[0];</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Battery level: <span class="hljs-subst">${batteryLevel}</span>`</span>);
   });</code></pre>
 <div class="caption"><a href="http://bit.ly/chrome-bluetooth-guide">bit.ly/chrome-bluetooth-guide</a></div></section>
   </div>
