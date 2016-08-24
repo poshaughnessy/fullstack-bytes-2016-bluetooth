@@ -19,7 +19,7 @@ controls: true
 
 <h2>Samsung Internet</h2>
 <p class="no-margin"><img src="images/samsunginternet.png" alt="Samsung Internet" width="45%"></p>
-<p class="caption"><a href="http://bit.ly/what-is-samsung-internet">bit.ly.what-is-samsung-internet</a></p>
+<p class="caption"><a href="http://bit.ly/what-is-samsung-internet">bit.ly/what-is-samsung-internet</a></p>
 
 --
 
