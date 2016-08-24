@@ -23,7 +23,7 @@ controls: false
 --
 
 <p class="media-container fill-h">![ByBox](images/bybox-stockonnect.gif)</p>
-<p class="caption">[ByBox Stockonnect app developed by pebble {code}](https://www.bybox.com/)</p>
+<p class="caption">[ByBox Stockonnect app by pebble {code} and ByBox](https://www.bybox.com/)</p>
 
 --
 
